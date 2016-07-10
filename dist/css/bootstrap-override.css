@@ -8,6 +8,7 @@
   position: relative;
   display: block;
   color: gold;
+  text-shadow: 1px 1px black;
 }
 
 .sidebar ul li a.active {
@@ -15,7 +16,7 @@
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .navbar .navbar-header .navbar-brand {
