@@ -1,0 +1,25 @@
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #bbb;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  color: gold;
+}
+
+.sidebar ul li a.active {
+    background-color: #bbb;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid black;
+}
+
+.navbar .navbar-header .navbar-brand {
+  color: gold;
+  text-shadow: 2px 2px 1px black;
+}
+
