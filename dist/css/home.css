@@ -26,13 +26,20 @@ h4 {
     }
 }
 
+#seal {
+  width: 15%;
+  height: auto;
+}
+
 .intro-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
-    background-image: url("../img/fries.gif");
+    background-image: url("../../img/gasson.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    
     
 }
 
@@ -41,18 +48,25 @@ h4 {
 }
 
 
-.services-section {
+.overview-section {
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    background: #eee;
+}
+
+.coordintors-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #eee;
+    background: #fff;
 }
 
 .contact-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #fff;
+    background: #eee;
 }
 /* large button css */
 .btn-sq-lg {
@@ -81,25 +95,28 @@ h4 {
 }
 
 .navbar {
-  background-color: #b30000;
+  background-color: maroon;
 }
 .navbar-default .navbar-nav>li>a {
-  color:white;
+  color:gold;
+  text-shadow: 1px 1px black;
   }
 .navbar-default .navbar-brand {
-  color:white;
+  color:gold;
+  text-shadow: 2px 2px 1px black;
 }
 .btn-success {
-    background-color: #b30000;
-    border-color: #b30000;
+    background-color: maroon;
+    border-color: maroon;
 }
 .btn-success:hover {
   background-color:#cc0000;
   border-color: #cc0000;
 }
 .navbar-default .navbar-text {
-  color: white;
+  color: gold;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #555;
     background-color: gold;
+}

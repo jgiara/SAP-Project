@@ -1,7 +1,7 @@
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #bbb;
+  background-color: #cc0000;
 }
 
 .nav > li > a {
@@ -12,11 +12,11 @@
 }
 
 .sidebar ul li a.active {
-    background-color: #bbb;
+    background-color: #cc0000;
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ccc;
 }
 
 .navbar .navbar-header .navbar-brand {
