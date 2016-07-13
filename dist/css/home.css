@@ -30,6 +30,11 @@ h1 {
   text-align: center;
 }
 
+.home {
+  width: 150%;
+  height: auto;
+}
+
 #seal {
   width: 15%;
   height: auto;
@@ -46,7 +51,7 @@ h1 {
     text-align: left;
 }
 
-.coord-pic {
+.img-thumbnail {
   width: 60%;
   height: auto;
 }
@@ -57,6 +62,15 @@ h1 {
 
 .coords>h5 {
   display: inline;
+}
+
+.social {
+  font-size: 250%;
+  color: maroon;
+}
+
+#social_header {
+  text-align: center;
 }
 
 .intro-section {
@@ -77,21 +91,21 @@ h1 {
 
 
 .overview-section {
-    height: 125%;
+    min-height: 125%;
     padding-top: 50px;
     text-align: center;
     background: #eee;
 }
 
 .coordinators-section {
-    height: 400%;
+    min-height: 400%;
     padding-top: 50px;
     text-align: center;
     background: #fff;
 }
 
 .contact-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 50px;
     text-align: center;
     background: #eee;
