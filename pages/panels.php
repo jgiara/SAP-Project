@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,7 +106,7 @@
                             <a href="applications.php">Applications</a>
                         </li>
                         <li>
-                            <a href="./panels.php">Panels</a>
+                            <a href="panels.php">Panels</a>
                         </li>
                         <li>
                             <a href="tours.php">Tours</a>
@@ -117,9 +121,44 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">Panels</h1>
                 </div>
                 <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#volunteers" data-toggle="tab">Volunteers</a>
+                                </li>
+                                <li><a href="#attendance" data-toggle="tab">Attendance</a>
+                                </li>
+                                <li><a href="#requirements" data-toggle="tab">Requirements</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="volunteers">
+                                    <h4>Volunteers</h4>
+                                </div>
+                                <div class="tab-pane fade" id="attendance">
+                                    <h4>Profile Tab</h4>
+                                </div>
+                                <div class="tab-pane fade" id="requirements">
+                                    <h4>Messages Tab</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
         </div>
