@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="font-size:150%;"><b>Student Admission Program</b></a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="font-size:150%;"><b id="brand">SAP</b></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,7 +40,7 @@
                         <a class="page-scroll" href="#overview">Overview</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#coordinators">SAP Council</a>
+                        <a class="page-scroll" href="#coordinators">Meet the Coordinators</a>
                     </li>
                      <li>
                         <a class="page-scroll" href="#contact">Contact Us</a>
@@ -56,9 +56,13 @@
                     <div class="form-group">
                         <input type="password" class="form-control" name="Password_s" placeholder="Password" required>
                     </div>
-                    <!--<button type="submit" name="signin"class="btn btn-default">Login</button>-->
-                    <button type="submit" name="signin"class="btn btn-default">Log In</button>
+                    <button type="submit" name="signin"class="btn btn-default">Login</button>
+                    <!--<div class="navbar-form navbar-right">
+                    <button type="submit" name="signin" class="btn btn-default">Log In</button>
+                    <button type="submit" name="register" class="btn btn-default">Register</button>
+                </div>-->
                 </form>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -73,7 +77,7 @@
                     <h1 style="color:white; text-shadow:0.5px 0.5px 5px #CB8E51;">Welcome to the Boston College Student Admission Program</h1>
                     <br/>
 
-                    <button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#registerModal">Create an Account</button>
+                    <button type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#registerModal">Register Your Account</button>
 
                 </div>
             </div>
@@ -306,46 +310,26 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Create an Account</h4>
+                    <h4 class="modal-title">Register Your Account</h4>
+                    <h5 class="modal-title">Note: You must be enrolled in an SAP program in order to register.</h5>
                   </div>
                   <div class="modal-body">
                     <form method="POST" name="registerForm">
                     <div class="form-group">
-                        <label for="email">Email Address:</label>
+                        <label for="eagleid">Eagle ID:</label>
+                        <input type="number" name="eagleid" class="form-control" id="eagleid" placeholder="Eagle ID" required>
+                    </div>    
+                    <div class="form-group">
+                        <label for="email">BC Email:</label>
                         <input type="email" name="Email" class="form-control" id="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" name="First_Name" class="form-control" id="firstName" placeholder="First Name" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                     </div>
                     <div class="form-group">
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" name="Last_Name" class="form-control" id="lastName" placeholder="Last Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="number">Phone Number:</label>
-                        <input type="tel" name="Phone" class="form-control" id="number" placeholder="Phone Number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="eagleID">Eagle ID #:</label>
-                        <input type="number" name="Eagle_Id" class="form-control" id="eagleID" placeholder="Eagle ID" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Dorm Name/Room:</label>
-                        <input type="text" name="Address" class="form-control" id="address" placeholder="Dorm Name/Room" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" name="Password" class="form-control" id="password" placeholder="8 Character Minimum" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="userType">What would you like to do:</label>
-                        <select name="Type" class="form-control" id="userType" required>
-                            <option name="role" value="">--</option>
-                            <option name="role" value="User">Order Food</option>
-                            <option name="role" value="Delivery Person">Make Deliveries</option>
-                            <option name="role" value="Both">Both</option>
-                        </select>
+                        <label for="repassword">Re-Enter Password</label>
+                        <input type="password" name="repassword" class="form-control" id="repassword" placeholder="Re-Enter Password" required>
                     </div>
                     <input type="submit" name="submit" value="Register" class="btn btn-default"></input>
                     </form>

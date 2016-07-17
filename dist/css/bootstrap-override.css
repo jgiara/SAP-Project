@@ -1,18 +1,20 @@
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #cc0000;
+  background-color: #fff0b3;
 }
 
 .nav > li > a {
   position: relative;
   display: block;
-  color: gold;
-  text-shadow: 1px 1px black;
+  color:  #cc0000;
+  text-shadow: 1px 1px white;
+  font-weight: 400;
+ 
 }
 
 .sidebar ul li a.active {
-    background-color: #cc0000;
+    background-color: #fff0b3;
 }
 
 .sidebar ul li {
@@ -20,7 +22,13 @@
 }
 
 .navbar .navbar-header .navbar-brand {
-  color: gold;
-  text-shadow: 2px 2px 1px black;
+  color:  #cc0000;
+  text-shadow: 2px 1px white;
+  font-weight: 500;
 }
+
+.sidebar, body, .navbar {
+    background-color: #ffd24d;
+}
+
 

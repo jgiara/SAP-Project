@@ -13,21 +13,18 @@ h4 {
   line-height: 150%;
 }
 
-@media(min-width:767px) {
-    .navbar {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
 
-    .top-nav-collapse {
-        padding: 0;
-    }
-}
 
 h1 {
   text-align: center;
+}
+
+.page-scroll {
+  font-size: 105%;
+}
+
+#brand {
+  font-size: 200%
 }
 
 .home {
@@ -140,11 +137,12 @@ h1 {
   background-color: maroon;
 }
 .navbar-default .navbar-nav>li>a {
-  color:gold;
+  color:#ffd24d;
   text-shadow: 1px 1px black;
+  font-weight: 600;
   }
 .navbar-default .navbar-brand {
-  color:gold;
+  color:#ffd24d;
   text-shadow: 2px 2px 1px black;
 }
 .btn-success {
@@ -156,9 +154,13 @@ h1 {
   border-color: #cc0000;
 }
 .navbar-default .navbar-text {
-  color: gold;
+  color: #ffd24d;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: maroon;
-    background-color: gold;
+    background-color: #ffd24d;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-header > a:hover, .navbar-default .navbar-header > a:focus{
+    background-color: maroon;
+    color: white;
 }
