@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard - Student Admission Program - Boston College</title>
+    <title>My Profile - Student Admission Program - Boston College</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -151,11 +151,26 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">My Profile</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+            <div class="row">
+                <div class"col-md-6">
+                    <img class="profile-pic img-thumbnail" src="../img/coord_gail.jpg">
+                </div>
+                <div class"col-md-3 col-md-offset-3">
+                    <label>Eagle ID: </label> <input type="text" name="eagleid" id="eagleid" readonly/>
+                </div>
+                <div class="col-md-4">
+                    <label>First Name: </label> <input type="text" id="fn" readonly/>
+                </div>
+                <div class="col-md-4">
+                    <label>Last Name: </label> <input type="text" id="fn" readonly/>
+                    <label>Class: </label> <input type="text" id="fn" readonly/>
+                </div>
+            </div>
         </div>
         <!-- /#page-wrapper -->
 
