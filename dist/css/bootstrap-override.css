@@ -41,11 +41,41 @@
 }
 
 .profile-pic {
-  width: 15%;
+  width: 25%;
   height: auto;
-  float: left;
-  margin-right: 5%
+  margin: 1%;
+  float: right;
 }
+
+.user-info {
+  margin: 20px;
+ 
+}
+
+.info-left {
+  float: left;
+  width: 400px;
+}
+
+.info-right {
+  float: left;
+  margin-left: 40px;
+}
+
+.info-label {
+  width: 100px;
+  position: inline-block;
+}
+
+.info-div {
+  word-wrap: normal;
+  position: inline-block;
+}
+
+#profile-header-row {
+  border-bottom: 1px solid #eee;
+}
+
 
 
 

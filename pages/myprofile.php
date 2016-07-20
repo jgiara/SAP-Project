@@ -149,28 +149,55 @@
         </nav>
 
         <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">My Profile</h1>
+            <div class="row" id="profile-header-row">
+                <div class="col-md-6">
+                    <h1 style="white-space: nowrap; margin-top: 40px">My Profile</h1>
+                </div>
+                <div class="col-md-6">
+                    <img class="profile-pic img-thumbnail" src="../img/coord_gail.jpg">
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class"col-md-6">
-                    <img class="profile-pic img-thumbnail" src="../img/coord_gail.jpg">
+            <div class="user-info">
+                <div class="info-left">
+                    <label class="info-label">Eagle ID: </label> <span id="info-eagleid" class="info-div">12345678</span>
                 </div>
-                <div class"col-md-3 col-md-offset-3">
-                    <label>Eagle ID: </label> <input type="text" name="eagleid" id="eagleid" readonly/>
+                <div class="info-right">
+                    <label class="info-label">Position: </label> <span id="info-position" class="info-div">Panels Coordinator</span>
+                </div> </br></br>
+                <div class="info-left">
+                     <label class="info-label">First Name: </label> <span id="info-fn" class="info-div">Abigail</span>
                 </div>
-                <div class="col-md-4">
-                    <label>First Name: </label> <input type="text" id="fn" readonly/>
+                <div class="info-right">
+                     <label class="info-label">Last Name: </label> <span id="info-ln" class="info-div">Brown</span>
+                </div></br></br>
+                <div class="info-left">
+                    <label class="info-label">Class: </label> <span id="info-class" class="info-div">2018</span>
                 </div>
-                <div class="col-md-4">
-                    <label>Last Name: </label> <input type="text" id="fn" readonly/>
-                    <label>Class: </label> <input type="text" id="fn" readonly/>
+                <div class="info-right">
+                    <label class="info-label">School: </label> <span id="info-school" class="info-div">MCAS</span>
+                </div></br></br>
+                <div class="info-left">
+                     <label class="info-label">Major: </label> <span id="info-major" class="info-div">Applied Psychology and Human Development</span>
                 </div>
+                <div class="info-right">
+                    <label class="info-label">Minor: </label> <span id="info-minor" class="info-div">Applied Psychology and Human Development</span>
+                </div></br></br>
+                <div class="info-left">
+                     <label class="info-label">Hometown: </label> <span id="info-hometown" class="info-div">Iowa City, IA</span>
+                </div>
+                <div class="info-right">
+                   <label class="info-label">Local Address: </label> <span id="info-local-address" class="info-div">2000 Comm Ave, 418</span>
+                </div></br></br>
+                <div class="info-left">
+                    <label class="info-label">Email: </label> <span id="info-email" class="info-div">brownbba@bc.edu</span>
+                </div>
+                <div class="info-right">
+                   <label class="info-label">Phone: </label> <span id="info-phone" class="info-div">555-555-5555</span>   
+                </div></br></br>
             </div>
+
         </div>
         <!-- /#page-wrapper -->
 
