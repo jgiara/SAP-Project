@@ -150,11 +150,8 @@
 
         <div id="page-wrapper">
             <div class="row" id="profile-header-row">
-                <div class="col-md-6">
-                    <h1 style="white-space: nowrap; margin-top: 40px">My Profile</h1>
-                </div>
-                <div class="col-md-6">
-                    <img class="profile-pic img-thumbnail" src="../img/coord_gail.jpg">
+                <div class="col-lg-12">
+                    <h1 style="white-space: nowrap; margin-top: 40px">My Involvement</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -167,11 +164,29 @@
                         <div class="panel-body">
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#basic-info" data-toggle="tab">Personal Info</a>
+                                <li class="active"><a href="#panels" data-toggle="tab">Panels</a>
                                 </li>
-                                <li><a href="#involvement" data-toggle="tab">Involvement</a>
+                                <li><a href="#tours" data-toggle="tab">Tours</a>
                                 </li>
-                                <li><a href="#notes" data-toggle="tab">Notes</a>
+                                <li><a href="#greeting" data-toggle="tab">Greeting</a>
+                                </li>
+                                <li><a href="#om" data-toggle="tab">OM</a>
+                                </li>
+                                <li><a href="#efad" data-toggle="tab">EFAD</a>
+                                </li>
+                                <li><a href="#aed" data-toggle="tab">AED</a>
+                                </li>
+                                <li><a href="#outreach" data-toggle="tab">Outreach</a>
+                                </li>
+                                <li><a href="#hsvisits" data-toggle="tab">HS Visits</a>
+                                </li>
+                                <li><a href="#ahana" data-toggle="tab">AHANA</a>
+                                </li>
+                                <li><a href="#io" data-toggle="tab">IO</a>
+                                </li>
+                                <li><a href="#transfer" data-toggle="tab">Transfer</a>
+                                </li>
+                                <li><a href="#media" data-toggle="tab">Media</a>
                                 </li>
                             </ul>
 

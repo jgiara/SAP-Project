@@ -50,11 +50,13 @@
 .info-left {
   margin-left: 10px;
   width: 400px;
-  position: fixed;
+  display: inline-block;
 }
 
+
+
 .info-right {
-  position: fixed;
+  display: inline;
   left: 750px;
 }
 
@@ -77,12 +79,29 @@
   left: 800px;
 }
 
+.involvd-left {
+  margin-left: 75px;
+  width: 400px;
+  position: fixed;
+}
+
+.involvd-right {
+  position: fixed;
+  left: 825px;
+}
+
 #profile-header-row {
   border-bottom: 1px solid #eee;
 }
 
-body {
+body:not(.inner-scroll) {
   position: fixed;
+}
+
+
+.inner-scroll {
+  height: 300px;
+  overflow-y: auto;
 }
 
 

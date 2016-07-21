@@ -176,7 +176,7 @@
                             </ul>
 
                             <!-- Tab panes -->
-                            <div class="tab-content">
+                            <div class="tab-content inner-scroll">
                                 <div class="tab-pane fade in active" id="basic-info">
                                 </br>
                                     <div class="info-left">
@@ -232,17 +232,36 @@
                                 <div class="tab-pane fade" id="involvement">
                                 </br>
                                     <div class="info-left">
-                                        <label class="involv-label">Office Programs: </label> <span id="involv-officep" class="info-div">5</span>
+                                        <label class="involv-label">Office Program: </label> <span id="involv-officep" class="info-div">5</span>
                                     </div>
                                     <div class="info-right">
                                         <label class="involv-label">Outreach Programs: </label> <span id="involv-outreachp" class="info-div">3</span>
                                     </div> </br></br>
                                     <div class="involv-left">
-                                        <label class="involv-label">Panels: </label> <span id="involv-panels" class="info-div">5</span>
+                                        <label class="involv-label">Panels</label>
                                     </div>
                                     <div class="involv-right">
                                         <label class="involv-label">Outreach: </label> <span id="involv-outreach" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Completed: </label> <span id="involv-outreach" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Completed: </label> <span id="involv-outreach" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Pending: </label> <span id="involv-outreach" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Pending: </label> <span id="involv-outreach" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Incomplete: </label> <span id="involv-outreach" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Incompleted: </label> <span id="involv-outreach" class="info-div">3</span>
                                     </div> </br></br>
+
                                     <div class="involv-left">
                                         <label class="involv-label">Tours: </label> <span id="involv-tours" class="info-div">5</span>
                                     </div>
