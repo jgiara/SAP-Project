@@ -47,33 +47,42 @@
   float: right;
 }
 
-.user-info {
-  margin: 20px;
- 
-}
-
 .info-left {
-  float: left;
+  margin-left: 10px;
   width: 400px;
+  position: fixed;
 }
 
 .info-right {
-  float: left;
-  margin-left: 40px;
+  position: fixed;
+  left: 750px;
 }
 
 .info-label {
-  width: 100px;
-  position: inline-block;
+  width: 100px; 
 }
 
-.info-div {
-  word-wrap: normal;
-  position: inline-block;
+.involv-label {
+  width: 170px;
+}
+
+.involv-left {
+  margin-left: 50px;
+  width: 400px;
+  position: fixed;
+}
+
+.involv-right {
+  position: fixed;
+  left: 800px;
 }
 
 #profile-header-row {
   border-bottom: 1px solid #eee;
+}
+
+body {
+  position: fixed;
 }
 
 

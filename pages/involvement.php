@@ -273,15 +273,10 @@
                                     <div class="involv-right">
                                         <label class="involv-label">Media: </label> <span id="involv-media" class="info-div">3</span>
                                     </div> </br></br></br></br>
-                                    Click <a href="./involvement.php">here</a> to see a more in-depth view of involvement
+                                    Click <a href"./involvement.php">here</a> to see a more in-depth view of involvement
                                 </div>
                                 <div class="tab-pane fade" id="notes">
-                                    <table id="notes-table">
-                                        <tr>
-                                            <td>10:00:02 07/20/16</br>Jon Giara - Head Coordinator</td>
-                                            <td>This is my first note</td>
-                                        </tr>
-                                    </table>
+                                    <h4>Messages Tab</h4>
                                 </div>
                             </div>
                         </div>
