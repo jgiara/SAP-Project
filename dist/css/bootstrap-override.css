@@ -53,11 +53,9 @@
   display: inline-block;
 }
 
-
-
 .info-right {
-  display: inline;
-  left: 750px;
+  display: inline-block;
+  margin-left: 50px;
 }
 
 .info-label {
@@ -69,25 +67,25 @@
 }
 
 .involv-left {
-  margin-left: 50px;
+  margin-left: 40px;
   width: 400px;
-  position: fixed;
+  display: inline-block;
 }
 
 .involv-right {
-  position: fixed;
-  left: 800px;
+  display: inline-block;
+  margin-left: 50px;
 }
 
 .involvd-left {
-  margin-left: 75px;
+  margin-left: 55px;
   width: 400px;
-  position: fixed;
+  display: inline-block;
 }
 
 .involvd-right {
-  position: fixed;
-  left: 825px;
+  display: inline-block;
+  margin-left: 50px;
 }
 
 #profile-header-row {
@@ -100,10 +98,24 @@ body:not(.inner-scroll) {
 
 
 .inner-scroll {
-  height: 300px;
+  height: 395px;
   overflow-y: auto;
 }
 
+#notes-table {
+  margin-left: 10px;
+  margin-top: 5px;
+  border-collapse: separate;
+  border-spacing: 0px 5px;
+  width: 825px;
+}
 
+.notes-data {
+  padding-left: 5px;
+  text-align: left;
+}
 
+.notes-row:nth-child(even) {
+  background-color: #CCC;
+}
 

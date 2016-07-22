@@ -230,75 +230,169 @@
                                     </div> </br></br>
                                 </div>
                                 <div class="tab-pane fade" id="involvement">
-                                </br>
+                                
+                                   Click <a href="./involvement.php">here</a> to see a more in-depth view of involvement</br></br>
                                     <div class="info-left">
-                                        <label class="involv-label">Office Program: </label> <span id="involv-officep" class="info-div">5</span>
+                                        <label class="involv-label">OFFICE PROGRAMS
                                     </div>
                                     <div class="info-right">
-                                        <label class="involv-label">Outreach Programs: </label> <span id="involv-outreachp" class="info-div">3</span>
-                                    </div> </br></br>
+                                        <label class="involv-label">OUTREACH PROGRAMS
+                                    </div> </br>
                                     <div class="involv-left">
                                         <label class="involv-label">Panels</label>
                                     </div>
                                     <div class="involv-right">
-                                        <label class="involv-label">Outreach: </label> <span id="involv-outreach" class="info-div">3</span>
+                                        <label class="involv-label">Outreach</label>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label">Completed: </label> <span id="involv-outreach" class="info-div">3</span>
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-panels" class="info-div">3</span>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label">Completed: </label> <span id="involv-outreach" class="info-div">3</span>
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-outreach" class="info-div">3</span>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label">Pending: </label> <span id="involv-outreach" class="info-div">3</span>
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-panels" class="info-div">3</span>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label">Pending: </label> <span id="involv-outreach" class="info-div">3</span>
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-outreach" class="info-div">3</span>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label">Incomplete: </label> <span id="involv-outreach" class="info-div">3</span>
+                                        <label class="involv-label">Incomplete: </label> <span id="involv-incomp-panels" class="info-div">3</span>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label">Incompleted: </label> <span id="involv-outreach" class="info-div">3</span>
+                                        <label class="involv-label">Incompleted: </label> <span id="involv-incomp-outreach" class="info-div">3</span>
                                     </div> </br></br>
 
                                     <div class="involv-left">
-                                        <label class="involv-label">Tours: </label> <span id="involv-tours" class="info-div">5</span>
+                                        <label class="involv-label">Tours</label> 
                                     </div>
                                     <div class="involv-right">
-                                        <label class="involv-label">High School Visits: </label> <span id="involv-hsvisits" class="info-div">3</span>
+                                        <label class="involv-label">High School Visits</label>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-tours" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-hsvisits" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-tours" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-hsvisits" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Incomplete: </label> <span id="involv-incomp-tours" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Incompleted: </label> <span id="involv-incomp-hsvisits" class="info-div">3</span>
                                     </div> </br></br>
                                     <div class="involv-left">
-                                        <label class="involv-label">Greeting: </label> <span id="involv-greeting" class="info-div">5</span>
+                                        <label class="involv-label">Greeting</label>
                                     </div>
                                     <div class="involv-right">
-                                        <label class="involv-label">AHANA Outreach: </label> <span id="involv-ahana" class="info-div">3</span>
+                                        <label class="involv-label">AHANA Outreach</label>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-greeting" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-ahana" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-greeting" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-ahana" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Incomplete: </label> <span id="involv-incomp-greeting" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Incompleted: </label> <span id="involv-incomp-ahana" class="info-div">3</span>
                                     </div> </br></br>
                                     <div class="involv-left">
-                                        <label class="involv-label">Office Management: </label> <span id="involv-om" class="info-div">5</span>
+                                        <label class="involv-label">Office Management</label> 
                                     </div>
                                     <div class="involv-right">
-                                        <label class="involv-label">International Outreach: </label> <span id="involv-io" class="info-div">3</span>
+                                        <label class="involv-label">International Outreach</label>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-om" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-io" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-om" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-io" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Incomplete: </label> <span id="involv-incomp-om" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Incompleted: </label> <span id="involv-incomp-io" class="info-div">3</span>
                                     </div> </br></br>
                                     <div class="involv-left">
-                                        <label class="involv-label">Eagle for a Day: </label> <span id="involv-efad" class="info-div">5</span>
+                                        <label class="involv-label">Eagle for a Day</label>
                                     </div>
                                     <div class="involv-right">
-                                        <label class="involv-label">Transfer Outreach: </label> <span id="involv-transfer" class="info-div">3</span>
+                                        <label class="involv-label">Transfer Outreach</label>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-efad" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-transfer" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-efad" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-transfer" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Incomplete: </label> <span id="involv-incomp-efad" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Incompleted: </label> <span id="involv-incomp-transfer" class="info-div">3</span>
                                     </div> </br></br>
                                     <div class="involv-left">
-                                        <label class="involv-label">Admitted Eagle Day: </label> <span id="involv-aed" class="info-div">5</span>
+                                        <label class="involv-label">Admitted Eagle Day</label>
                                     </div>
                                     <div class="involv-right">
-                                        <label class="involv-label">Media: </label> <span id="involv-media" class="info-div">3</span>
-                                    </div> </br></br></br></br>
-                                    Click <a href="./involvement.php">here</a> to see a more in-depth view of involvement
+                                        <label class="involv-label">Media</label>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-aed" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Completed: </label> <span id="involv-comp-media" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-aed" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Pending: </label> <span id="involv-pend-media" class="info-div">3</span>
+                                    </div> </br>
+                                    <div class="involvd-left">
+                                        <label class="involv-label">Incomplete: </label> <span id="involv-incomp-aed" class="info-div">3</span>
+                                    </div>
+                                    <div class="involvd-right">
+                                        <label class="involv-label">Incompleted: </label> <span id="involv-incomp-media" class="info-div">3</span>
+                                    </div> </br></br>
                                 </div>
                                 <div class="tab-pane fade" id="notes">
                                     <table id="notes-table">
-                                        <tr>
+                                        <tr class="notes-row">
                                             <td>10:00:02 07/20/16</br>Jon Giara - Head Coordinator</td>
-                                            <td>This is my first note</td>
+                                            <td class="notes-data">This is my first note</td>
+                                        </tr>
+                                        <tr class="notes-row">
+                                            <td>10:00:02 07/20/16</br>Jon Giara - Head Coordinator</td>
+                                            <td class="notes-data">This is my first note sdkfhsd sdfkhdaf sdafhdsaf sdafasdhfkj dsjfkhdsa fdsafihdsaf dsafhsad,mf sdjkfhdsjb</br></br>this is a test to see</br>how many</br></br>breaks llok like</td>
                                         </tr>
                                     </table>
                                 </div>

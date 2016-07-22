@@ -251,7 +251,7 @@
                                     </div>
                                     <div class="info-right">
                                         <label class="involv-label">Outreach Programs: </label> <span id="involv-outreachp" class="info-div">3</span>
-                                    </div> </br></br>
+                                    </div> </br>
                                     <div class="involv-left">
                                         <label class="involv-label">Panels: </label> <span id="involv-panels" class="info-div">5</span>
                                     </div>
