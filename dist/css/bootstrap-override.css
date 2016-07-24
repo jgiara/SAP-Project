@@ -66,6 +66,11 @@
   width: 170px;
 }
 
+.involv-label-count {
+  width: 170px;
+  font-weight: 400;
+}
+
 .involv-left {
   margin-left: 40px;
   width: 400px;
@@ -98,7 +103,7 @@ body:not(.inner-scroll) {
 
 
 .inner-scroll {
-  height: 395px;
+  height: 380px;
   overflow-y: auto;
 }
 
@@ -117,5 +122,15 @@ body:not(.inner-scroll) {
 
 .notes-row:nth-child(even) {
   background-color: #CCC;
+}
+
+.info-div-hide-box {
+  border: none;
+  width: 275px;
+}
+
+.involv-div-hide-box {
+  border: none;
+  width: 20px;
 }
 

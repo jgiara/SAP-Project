@@ -140,6 +140,9 @@
                         <li>
                             <a href="./media.php">Media</a>
                         </li>
+                        <li>
+                            <a href="./summer.php">Summer</a>
+                        </li>
                         </ul>
                     </div>
                 </div>
@@ -151,7 +154,7 @@
         <div id="page-wrapper">
             <div class="row" id="profile-header-row">
                 <div class="col-lg-12">
-                    <h1 style="white-space: nowrap; margin-top: 40px">My Involvement</h1>
+                    <h2 style="white-space: nowrap; margin-top: 5px">My Involvement</h2>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -187,6 +190,8 @@
                                 <li><a href="#transfer" data-toggle="tab">Transfer</a>
                                 </li>
                                 <li><a href="#media" data-toggle="tab">Media</a>
+                                </li>
+                                <li><a href="#summer" data-toggle="tab">Summer</a>
                                 </li>
                             </ul>
 
@@ -287,6 +292,12 @@
                                     </div>
                                     <div class="involv-right">
                                         <label class="involv-label">Media: </label> <span id="involv-media" class="info-div">3</span>
+                                    </div> </br></br>
+                                    <div class="involv-left">
+                                        <label class="involv-label">Summer: </label> <span id="involv-efad" class="info-div">5</span>
+                                    </div>
+                                    <div class="involv-right">
+                                        <label class="involv-label">Transfer Outreach: </label> <span id="involv-transfer" class="info-div">3</span>
                                     </div> </br></br></br></br>
                                     Click <a href"./involvement.php">here</a> to see a more in-depth view of involvement
                                 </div>
