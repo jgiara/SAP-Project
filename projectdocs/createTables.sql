@@ -16,11 +16,80 @@ ahana varchar(3) not null check(ahana in ('Yes', 'No')),
 transfer varchar(3) not null check(transfer in ('Yes', 'No')),
 phone varchar(12) not null,
 email varchar(30) not null,
-local_address varchar(500),
+local_address varchar(100),
 password varchar(40) not null,
-Notes text,
-type varchar(20) not null check(type in ('Volunteer', 'Council', 'Counselor', 'Admin'))
+position varchar(20) not null,
+updated datetime not null,
+joined date not null,
+active varchar(3) not null (check(active in ('Yes', 'No', 'Abroad', 'Prac/Clinical')));
 
+create table Groups (
+	group_id int(10) not null auto_increment primary key,
+	group_name varchar(20) not null, 
+);
 
-add a status/active field
-role/position
+create table Roles (
+	role_id int(10) not null auto_increment primary key,
+	role_name varchar(20) not null,
+);
+
+create table Group_Members (
+	group_member_id int(10) not null auto_increment primary key,
+	user int(8) not null references Users(eagle_id),
+	group int(10) not null references Groups(group_id),
+);
+
+create table Role_Members (
+	role_member_id int(10) not null auto_increment primary key, 
+	user int(8) not null references Users(eagle_id),
+	role int(10) not null references Roles(role_id)
+);
+
+create table Programs (
+	program_id int(10) not null auto_increment primary key, 
+	program_name varchar(30) not null,
+	coordinator int(8) not null references Users(eagle_id),
+	semester varchar(6) not null check(semester in('Fall', 'Spring')),
+	year int(4) not null, 
+	requirements text not null
+);
+
+create table Program_Members (
+	member_id int(10) not null auto_increment primary key,
+	user int(8) not null references Users(eagle_id),
+	program int(10) not null references Programs(program_id),
+	title varchar(20),
+	shift_day varchar(10), 
+	shift_time varchar(10),
+	requirements_staus varchar(10) not null check(requirements_staus in('Complete', 'Pending', 'Incomplete'))
+);
+
+create table Notes (
+	note_id int(10) not null auto_increment primary key,
+	user int(8) not null references Users(eagle_id),
+	submitted_by int(8) not null references Users(eagle_id),
+	submitted datetime not null,
+	program int(10) references Programs(program_id),
+	comments text not null
+);
+
+create table Attendance (
+	attendance_id int(10) not null auto_increment primary key,
+	user int(8) not null references Users(eagle_id),
+	program int(10) not null references Programs(program_id),
+	present varchar(10) not null check(present in('Present', 'Excused', 'No Show'))
+	week int(2) not null
+	note varchar(30), 
+	shift_day varchar(10) not null,
+	shift_time varchar(10) not null
+);
+
+create table User_Audit (
+	audit_id int(10) not null auto_increment primary key,
+	field varchar(15) not null,
+	old_value varchar(100) not null,
+	new_value varchar(100) not null,
+	updated datetime not null,
+	updated_by int(8) not null references Users(eagle_id)
+);
+
