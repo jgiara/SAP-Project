@@ -180,54 +180,55 @@
                                 <div class="tab-pane fade in active" id="basic-info">
                                 </br>
                                     <div class="info-left">
-                                        <label class="info-label">Eagle ID: </label> <input type="text" readonly id="info-eagleid" class="info-div-hide-box" value="12345678"></input>
+                                        <label class="info-label">Eagle ID: </label> <input type="text" readonly id="info-eagleid" class="info-div-hide-box" size="30" value="12345678"></input>
                                     </div>
                                     <div class="info-right">
-                                        <label class="info-label">Position: </label> <input type="text" id="info-position" class="info-div-hide-box" value="Panels Coordinator"</input>
+                                        <label class="info-label">Position: </label> <input type="text" id="info-position" class="info-div-hide-box" size="30" value="Panels Coordinator"</input>
                                     </div> </br></br>
                                     <div class="info-left">
-                                         <label class="info-label">First Name: </label> <input type="text" id="info-fn" class="info-div-hide-box" value="Abigail"></input>
+                                         <label class="info-label">First Name: </label> <input type="text" id="info-fn" class="info-div-hide-box" size="30" value="Abigail"></input>
                                     </div>
                                     <div class="info-right">
-                                         <label class="info-label">Last Name: </label> <input type="text" id="info-ln" class="info-div-hide-box" value="Brown"></input>
+                                         <label class="info-label">Last Name: </label> <input type="text" id="info-ln" class="info-div-hide-box" size="30" value="Brown"></input>
                                     </div></br></br>
                                     <div class="info-left">
-                                        <label class="info-label">Class: </label> <input type="text" id="info-class" class="info-div-hide-box" value="2018"></input>
+                                        <label class="info-label">Class: </label> <input type="text" id="info-class" class="info-div-hide-box" size="30" value="2018"></input>
                                     </div>
                                     <div class="info-right">
-                                        <label class="info-label">School: </label> <input type="text" id="info-school" class="info-div-hide-box" value="MCAS"></input>
+                                        <label class="info-label">School: </label> <input type="text" id="info-school" class="info-div-hide-box" size="30" value="MCAS"></input>
                                     </div></br></br>
                                     <div class="info-left">
-                                         <label class="info-label">Major: </label> <input type="text" id="info-major" class="info-div-hide-box" value="Applied Psychology & Human Development"></input>
+                                         <label class="info-label">Major: </label> <input type="text" id="info-major" class="info-div-hide-box" size="30" value="Applied Psychology & Human Development"></input>
                                     </div>
                                     <div class="info-right">
-                                        <label class="info-label">Minor: </label> <input type="text" id="info-minor" class="info-div-hide-box" value="Applied Psychology & Human Development"></input>
+                                        <label class="info-label">Minor: </label> <input type="text" id="info-minor" class="info-div-hide-box" size="30" value="Applied Psychology & Human Development"></input>
                                     </div></br></br>
                                     <div class="info-left">
-                                         <label class="info-label">Hometown: </label> <input type="text" id="info-hometown" class="info-div-hide-box" value="Iowa City, IA"></input>
+                                         <label class="info-label">Hometown: </label> <input type="text" id="info-hometown" class="info-div-hide-box" size="30" value="Iowa City, IA"></input>
                                     </div>
                                     <div class="info-right">
-                                       <label class="info-label">Local Address: </label> <input type="text" id="info-local-address" class="info-div-hide-box" value="2000 Comm Ave, 418"></input>
+                                       <label class="info-label">Local Address: </label> <input type="text" id="info-local-address" class="info-div-hide-box" size="30" value="2000 Comm Ave, 418"></input>
                                     </div></br></br>
                                     <div class="info-left">
-                                        <label class="info-label">Email: </label> <input type="text" id="info-email" class="info-div-hide-box" value="brownbba@bc.edu"></input>
+                                        <label class="info-label">Email: </label> <input type="text" id="info-email" class="info-div-hide-box" size="30" value="brownbba@bc.edu"></input>
                                     </div>
                                     <div class="info-right">
-                                       <label class="info-label">Phone: </label> <input type="text" id="info-phone" class="info-div-hide-box" value="555-555-5555"></input>   
+                                       <label class="info-label">Phone: </label> <input type="text" id="info-phone" class="info-div-hide-box" size="30" value="555-555-5555"></input>   
                                     </div></br></br>
                                     <div class="info-left">
-                                        <label class="info-label">Sex: </label> <input type="text" id="info-sex" class="info-div-hide-box" value="Female"></input>
+                                        <label class="info-label">Sex: </label> <input type="text" id="info-sex" class="info-div-hide-box" size="30" value="Female"></input>
                                     </div>
                                     <div class="info-right">
-                                        <label class="info-label">AHANA: </label> <input type="text" id="info-ahana" class="info-div-hide-box" value="No"></input>
+                                        <label class="info-label">AHANA: </label> <input type="text" id="info-ahana" class="info-div-hide-box" size="30" value="No"></input>
                                     </div> </br>
                                     </br>
                                     <div class="info-left">
-                                        <label class="info-label">International: </label> <input type="text" id="info-international" class="info-div-hide-box" value="No"></input>
+                                        <label class="info-label">International: </label> <input type="text" id="info-international" class="info-div-hide-box" size="30" value="No"></input>
                                     </div>
                                     <div class="info-right">
-                                        <label class="info-label">Transfer: </label> <input type="text" id="info-transfer" class="info-div-hide-box" value="No"></input>
+                                        <label class="info-label">Transfer: </label> <input type="text" id="info-transfer" class="info-div-hide-box" size="30" value="No"></input>
                                     </div> </br></br>
+                    
                                 </div>
                                 <div class="tab-pane fade" id="involvement">
                                 
@@ -245,22 +246,22 @@
                                         <label class="involv-label">Outreach</label>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-panels" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-panels" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-outreach" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-outreach" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-panels" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-panels" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-outreach" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-outreach" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-panels" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-panels" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-outreach" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-outreach" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br></br>
 
                                     <div class="involv-left">
@@ -270,22 +271,22 @@
                                         <label class="involv-label">High School Visits</label>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-tours" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-tours" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-hsvisits" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-hsvisits" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-tours" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-tours" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-hsvisits" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-hsvisits" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-tours" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-tours" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-hsvisits" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-hsvisits" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br></br>
                                     <div class="involv-left">
                                         <label class="involv-label">Greeting</label>
@@ -294,22 +295,22 @@
                                         <label class="involv-label">AHANA Outreach</label>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-greeting" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-greeting" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-ahana" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-ahana" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-greeting" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-greeting" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-ahana" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-ahana" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-greeting" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-greeting" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-ahana" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-ahana" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br></br>
                                     <div class="involv-left">
                                         <label class="involv-label">Office Management</label> 
@@ -318,22 +319,22 @@
                                         <label class="involv-label">International Outreach</label>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-om" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-om" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-io" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-io" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-om" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-om" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-io" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-io" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-om" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-om" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-io" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-io" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br></br>
                                     <div class="involv-left">
                                         <label class="involv-label">Eagle for a Day</label>
@@ -342,22 +343,22 @@
                                         <label class="involv-label">Transfer Outreach</label>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-efad" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-efad" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-transfer" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-transfer" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-efad" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-efad" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-transfer" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-transfer" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-efad" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-efad" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-transfer" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-transfer" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br></br>
                                     <div class="involv-left">
                                         <label class="involv-label">Admitted Eagle Day</label>
@@ -366,22 +367,22 @@
                                         <label class="involv-label">Media</label>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-aed" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-aed" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-media" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-media" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-aed" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-aed" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-media" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-media" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-aed" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-aed" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
-                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-media" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incompleted: </label> <input type="text" id="involv-incomp-media" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div> </br></br>
                                      <div class="involv-left">
                                         <label class="involv-label">Summer</label>
@@ -390,19 +391,19 @@
                                         
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-aed" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Completed: </label> <input type="text" id="involv-comp-aed" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
                                         
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-aed" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Pending: </label> <input type="text" id="involv-pend-aed" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
                                        
                                     </div> </br>
                                     <div class="involvd-left">
-                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-aed" class="involv-div-hide-box" value="3"></input>
+                                        <label class="involv-label-count">Incomplete: </label> <input type="text" id="involv-incomp-aed" class="involv-div-hide-box" size="1" value="3"></input>
                                     </div>
                                     <div class="involvd-right">
                                         

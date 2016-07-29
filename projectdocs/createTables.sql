@@ -1,4 +1,11 @@
 drop table Users;
+drop table Groups;
+drop table Group_Members;
+drop table Programs;
+drop table Program_Members;
+drop table Notes;
+drop table Attendance;
+drop table User_Audit;
 
 create table Users (
 eagle_id int(8) not null primary key,
@@ -10,40 +17,35 @@ school varchar(4) not null check(school in ('MCAS', 'CSOM', 'CSON', 'LSOE')),
 major varchar(40) not null,
 minor varchar(40),
 hometown varchar(30) not null,
-state_country varchar(30) not null,
+state_country varchar(20) not null,
 international varchar(3) not null check(international in ('Yes', 'No')),
 ahana varchar(3) not null check(ahana in ('Yes', 'No')),
 transfer varchar(3) not null check(transfer in ('Yes', 'No')),
 phone varchar(12) not null,
 email varchar(30) not null,
-local_address varchar(100),
+local_address varchar(100) not null,
 password varchar(40) not null,
 position varchar(20) not null,
 updated datetime not null,
 joined date not null,
-active varchar(3) not null (check(active in ('Yes', 'No', 'Abroad', 'Prac/Clinical')));
+applied_tours int(1),
+applied_panels int(1),
+applied_council int(1),
+applied_summer int(1),
+active varchar(3) not null check(active in ('Yes', 'No', 'Abroad', 'Prac/Clinical')));
 
 create table Groups (
 	group_id int(10) not null auto_increment primary key,
-	group_name varchar(20) not null, 
-);
-
-create table Roles (
-	role_id int(10) not null auto_increment primary key,
-	role_name varchar(20) not null,
+	group_name varchar(20) not null
 );
 
 create table Group_Members (
 	group_member_id int(10) not null auto_increment primary key,
 	user int(8) not null references Users(eagle_id),
-	group int(10) not null references Groups(group_id),
+	group_id int(10) not null references Groups(group_id),
+	access varchar(10) not null check(access in ('view', 'edit'))
 );
 
-create table Role_Members (
-	role_member_id int(10) not null auto_increment primary key, 
-	user int(8) not null references Users(eagle_id),
-	role int(10) not null references Roles(role_id)
-);
 
 create table Programs (
 	program_id int(10) not null auto_increment primary key, 
@@ -77,8 +79,8 @@ create table Attendance (
 	attendance_id int(10) not null auto_increment primary key,
 	user int(8) not null references Users(eagle_id),
 	program int(10) not null references Programs(program_id),
-	present varchar(10) not null check(present in('Present', 'Excused', 'No Show'))
-	week int(2) not null
+	present varchar(10) not null check(present in('Present', 'Excused', 'No Show')),
+	week int(2) not null,
 	note varchar(30), 
 	shift_day varchar(10) not null,
 	shift_time varchar(10) not null
