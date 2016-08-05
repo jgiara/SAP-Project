@@ -2,12 +2,12 @@
 class General{
 
 	public function logged_in () {
-		return(isset($_SESSION['Eagle_Id'])) ? true : false;
+		return(isset($_SESSION['eagle_id'])) ? true : false;
 	}
 
 	public function logged_in_protect() {
 		if ($this->logged_in() === true) {
-			header('Location: user/userHome.php');
+			header('Location: ./dashboard.php');
 			exit();		
 		}
 	}
