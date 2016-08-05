@@ -11,7 +11,7 @@ class Users{
 	
 	public function email_exists($Email) {
 
-		$query = $this->db->prepare("SELECT COUNT(`Eagle_Id`) FROM `Users` WHERE `Email`= ?");
+		$query = $this->db->prepare("SELECT COUNT(`eagle_id`) FROM `Users` WHERE `email`= ?");
 		$query->bindValue(1, $Email);
 	
 		try{
@@ -33,29 +33,27 @@ class Users{
 
 public function register( $Password, $Email, $First_Name, $Last_Name, $Eagle_Id, $Address, $Phone, $Type){
 		
-		$Time 		= time();
-		$Ip 		= $_SERVER['REMOTE_ADDR'];
-		$Password   = sha1($Password);
+		$Time = time();
+		$Ip = $_SERVER['REMOTE_ADDR'];
+		$Password = sha1($Password);
 		
 	 
-		$query 	= $this->db->prepare("INSERT INTO `Users` (`Password`, `Email`, `First_Name`, `Last_Name`, `Eagle_Id`, `Address`, `Phone`, `Type`, `Ip`, `Time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
+		$query 	= $this->db->prepare("INSERT INTO `Users` (/////UPDATE THIS`password`, `email`, `first_name`, `Last_Name`, `Eagle_Id`, `Address`, `Phone`, `Type`, `Ip`, `Time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
 	 
 		$query->bindValue(1, $Password);
 		$query->bindValue(2, $Email);
 		$query->bindValue(3, $First_Name);
-        $query->bindValue(4, $Last_Name);
-        $query->bindValue(5, $Eagle_Id);
-        $query->bindValue(6, $Address);
-        $query->bindValue(7, $Phone);
-        $query->bindValue(8, $Type);
-        $query->bindValue(9, $Ip);
-        $query->bindValue(10, $Time);
+	        $query->bindValue(4, $Last_Name);
+	        $query->bindValue(5, $Eagle_Id);
+	        $query->bindValue(6, $Address);
+	        $query->bindValue(7, $Phone);
+	        $query->bindValue(8, $Type);
+	        $query->bindValue(9, $Ip);
+	        $query->bindValue(10, $Time);
       
 	 
 		try{
 			$query->execute();
-			
-
 		
 		}catch(PDOException $e){
 			die($e->getMessage());
@@ -65,16 +63,16 @@ public function register( $Password, $Email, $First_Name, $Last_Name, $Eagle_Id,
 
 	public function login($Email, $Password) {
 
-		$query = $this->db->prepare("SELECT `Password`, `Eagle_Id`, `Type` FROM `Users` WHERE `Email` = ?");
+		$query = $this->db->prepare("SELECT `password`, `eagle_id`, `Type` FROM `Users` WHERE `email` = ?");
 		$query->bindValue(1, $Email);
 		
 		try{
 			
 			$query->execute();
-			$data 				= $query->fetch();
-			$stored_password 	= $data['Password'];
-			$Id   				= $data['Eagle_Id'];
-			$Type   			= $data['Type'];
+			$data = $query->fetch();
+			$stored_password = $data['password'];
+			$Id = $data['eagle_Id'];
+			$Type = $data['type'];
 
 			
 			if($stored_password === sha1($Password)){
@@ -89,7 +87,7 @@ public function register( $Password, $Email, $First_Name, $Last_Name, $Eagle_Id,
 	
 	} 
 
-	public function get_type($Email) {
+	public function get_type($Email) { //UPDATE: get roles/group membersships
 
 		$query = $this->db->prepare("SELECT `Type` FROM `Users` WHERE `Email` = ?");
 		$query->bindValue(1, $Email);
@@ -97,8 +95,8 @@ public function register( $Password, $Email, $First_Name, $Last_Name, $Eagle_Id,
 		try{
 			
 			$query->execute();
-			$data 				= $query->fetch();
-			$Type   			= $data['Type'];
+			$data = $query->fetch();
+			$Type = $data['Type'];
 			
 			return $Type;
 			
@@ -111,7 +109,7 @@ public function register( $Password, $Email, $First_Name, $Last_Name, $Eagle_Id,
 
 	public function userdata($Eagle_Id) {
 
-		$query = $this->db->prepare("SELECT * FROM `Users` WHERE `Eagle_Id`= ?");
+		$query = $this->db->prepare("SELECT * FROM `Users` WHERE `eagle_id`= ?");
 		$query->bindValue(1, $Eagle_Id);
 
 		try{
@@ -140,23 +138,6 @@ public function register( $Password, $Email, $First_Name, $Last_Name, $Eagle_Id,
 		return $query->fetch();
 
 		}	
-
-	public function menu_items() {
-
-		$query = $this->db->prepare("SELECT * FROM Items");
-
-		try{
-
-			$query->execute();
-
-			return $query->fetchAll();
-
-		} catch(PDOException $e){
-
-			die($e->getMessage());
-		}
-
-	}
 	
 		
 
@@ -167,26 +148,21 @@ public function recover($Email) {
 	$encryptpass =  sha1($newpass);
 
 	$message = "Hello User,\r\nYour new password is ".$newpass.".";
-	$headers = "From: sendler@bc.edu" . "\r\n" .
-			"Cc: christian.sendler@gmail.com.com";
+	$headers = "From: sap@bc.edu";
 
-	$query = $this->db->prepare("UPDATE Users SET Password='$encryptpass' WHERE `Email`= ?");
+	$query = $this->db->prepare("UPDATE 'Users' SET 'password'='$encryptpass' WHERE `email`= ?");
 	$query->bindValue(1, $Email);
 
 		try{
 			$query->execute();
 
-			mail($email,"Munchies@BC: Password Reset",$message, $headers);
+			mail($email,"SAP Website Portal: Password Reset",$message, $headers);
 
 		
 		}catch(PDOException $e){
 			die($e->getMessage());
 		}	
-
-}
-
-
-
+	}
 } //close class
 
 
