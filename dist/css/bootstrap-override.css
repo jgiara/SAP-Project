@@ -133,3 +133,7 @@ body:not(.inner-scroll) {
   
 }
 
+#panels-volunteers {
+  width: 100%;
+}
+

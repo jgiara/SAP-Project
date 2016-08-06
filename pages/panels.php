@@ -154,14 +154,14 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Panels</h1>
+                    <h2 style="white-space: nowrap; margin-top: 5px margin-bottom: 5px;">Panels</h2>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default">
+                    
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <!-- Nav tabs -->
@@ -175,11 +175,10 @@
                             </ul>
 
                             <!-- Tab panes -->
-                            <div class="tab-content">
+                            <div class="tab-content inner-scroll">
                                 <div class="tab-pane fade in active" id="volunteers">
-                                    <h4>Volunteers</h4>
-                                    <div class="dataTable_wrapper">
-                                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    
+                                        <table class="table table-striped table-bordered table-hover" id="panels-volunteers">
                                             <thead>
                                                 <tr>
                                                     <th>Volunteer</th>
@@ -215,7 +214,7 @@
                                                     }
 
                                                     $dbc    = connect_to_db( "SAP" ); 
-                                                    $query  = "select first_name, last_name, class, school, shift_day, shift_time, requirements_status from Program_Members join Users on user = eagle_id and program = 1 order by last_name asc";
+                                                    $query  = "select * from Program_Members join Users on user = eagle_id and program = 1 order by last_name asc";
                                                     $result = perform_query( $dbc, $query );
                                                     while($row = mysqli_fetch_array( $result, MYSQLI_ASSOC )) {
                                                         echo "<tr class = odd>";
@@ -232,7 +231,7 @@
                                                 ?>
                                             </tbody>
                                         </table>
-                                    </div>
+                                    
                                 </div>
                                 <div class="tab-pane fade" id="attendance">
                                     <h4>Profile Tab</h4>
@@ -243,8 +242,7 @@
                             </div>
                         </div>
                         <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
+                    
                 </div>
                 <!-- /.col-lg-6 -->
             </div>
@@ -274,7 +272,7 @@
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
     $(document).ready(function() {
-        $('#dataTables-example').DataTable({
+        $('#panels-volunteers').DataTable({
                 responsive: true
         });
     });
