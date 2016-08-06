@@ -3,6 +3,8 @@ drop table Groups;
 drop table Group_Members;
 drop table Programs;
 drop table Program_Members;
+drop table Council;
+drop table Council_Members;
 drop table Notes;
 drop table Attendance;
 drop table User_Audit;
@@ -25,7 +27,7 @@ phone varchar(12) not null,
 email varchar(30) not null,
 local_address varchar(100) not null,
 password varchar(40) not null,
-position varchar(20) not null,
+position varchar(40) not null,
 updated datetime not null,
 joined date not null,
 applied_tours int(1),
@@ -46,6 +48,17 @@ create table Group_Members (
 	access varchar(10) not null check(access in ('view', 'edit'))
 );
 
+create table Council (
+	council_id int(10) not null auto_increment primary key,
+	academic_year varchar(10) not null
+);
+
+create table Council_Members (
+	council_member_id int(10) not null auto_increment primary key,
+	user int(8) not null references Users(eagle_id), 
+	council_id int(10) not null references Council(council_id),
+	position varchar(40) not null
+);
 
 create table Programs (
 	program_id int(10) not null auto_increment primary key, 
@@ -63,7 +76,7 @@ create table Program_Members (
 	title varchar(20),
 	shift_day varchar(10), 
 	shift_time varchar(10),
-	requirements_staus varchar(10) not null check(requirements_staus in('Complete', 'Pending', 'Incomplete'))
+	requirements_status varchar(10) not null check(requirements_staus in('Complete', 'Pending', 'Incomplete'))
 );
 
 create table Notes (

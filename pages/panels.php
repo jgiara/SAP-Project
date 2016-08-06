@@ -21,8 +21,11 @@
     <!-- MetisMenu CSS -->
     <link href="../dist/css/metisMenu.min.css" rel="stylesheet">
 
-    <!-- Timeline CSS -->
-    <link href="../dist/css/timeline.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="../dist/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../dist/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
@@ -175,6 +178,61 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade in active" id="volunteers">
                                     <h4>Volunteers</h4>
+                                    <div class="dataTable_wrapper">
+                                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                            <thead>
+                                                <tr>
+                                                    <th>Volunteer</th>
+                                                    <th>Class</th>
+                                                    <th>School</th>
+                                                    <th>Shift Day</th>
+                                                    <th>Shift Time</th>
+                                                    <th>Requirement Status</th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tablebody-vols">
+                                                <?php 
+                                                    function connect_to_db( $dbname ){
+                                                        // REMEMBER!!!
+                                                        // Change the host, login, and db information
+                                                        $dbc = @mysqli_connect( "localhost", "root", "root", $dbname ) or
+                                                                die( "Connect failed: ". mysqli_connect_error() );
+                                                        return $dbc;
+                                                    }
+
+                                                    function disconnect_from_db( $dbc, $result ){
+                                                        mysqli_free_result( $result );
+                                                        mysqli_close( $dbc );
+                                                    }
+
+                                                    function perform_query( $dbc, $query ){
+                                                        
+                                                        //echo "My query is >$query< <br />";
+                                                        $result = mysqli_query($dbc, $query) or 
+                                                                die( "bad query".mysqli_error( $dbc ) );
+                                                        return $result;
+                                                    }
+
+                                                    $dbc    = connect_to_db( "SAP" ); 
+                                                    $query  = "select first_name, last_name, class, school, shift_day, shift_time, requirements_status from Program_Members join Users on user = eagle_id and program = 1 order by last_name asc";
+                                                    $result = perform_query( $dbc, $query );
+                                                    while($row = mysqli_fetch_array( $result, MYSQLI_ASSOC )) {
+                                                        echo "<tr class = odd>";
+                                                        echo "<td>".$row['first_name']." ".$row['last_name']."</td>";
+                                                        echo "<td>".$row['class']."</td>";
+                                                        echo "<td>".$row['school']."</td>";
+                                                        echo "<td>".$row['shift_day']."</td>";
+                                                        echo "<td>".$row['shift_time']."</td>";
+                                                        echo "<td>".$row['requirements_status']."</td>";
+                                                        echo "</tr>";
+                                                        
+                                                    }
+                                                    disconnect_from_db( $dbc, $result );
+                                                ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="attendance">
                                     <h4>Profile Tab</h4>
@@ -206,13 +264,21 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../dist/js/metisMenu.min.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="../dist/js/raphael-min.js"></script>
-    <script src="../dist/js/morris.min.js"></script>
-    <script src="../dist/js/morris-data.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="../dist/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../dist/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
 
 </body>
 

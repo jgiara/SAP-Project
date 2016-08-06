@@ -64,8 +64,10 @@ values (70733046, 2, 'edit');
 insert into Programs (program_name, coordinator, semester, year, requirements)
 values ('Panels', 12345678, 'Spring', 2016, '2 Extra Panels');
 
-insert into Program_Members (user, program, title, shift_day. shift_time, requirements_status)
-values 
+insert into Council (academic_year) values ('2016-2017');
+
+insert into Program_Members (user, program, title, requirements_status)
+values (, 1, 'Volunteer', 'Complete');
 
 //insert many rows into table based on query from other table, get values, etc.
 
